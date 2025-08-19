@@ -10,7 +10,7 @@ with MPRester("2zenyrAKUFGB1dF4Qg9aJMiBAeWatnpY") as mpr:
     elasticity_InAs_ZW = mpr.materials.elasticity._search(material_ids=["mp-20305"], fields=["elastic_tensor"])
 
 
-# The retrieved data is then processed to extract the elastic tensor and convert it into a matrix format.
+# The retrieved data is then processed to extract the elastic tensor and convert it into a matrix format
 elasticity_InAs_ZW_matrix = []
 
 for doc in elasticity_InAs_ZW:
